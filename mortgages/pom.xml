@@ -7,9 +7,9 @@
   <version>0.0.1</version>
   <packaging>jar</packaging> 
   <scm>
-    <url>http://www.svn.com</url>
-    <connection>scm:svn:http://localhost:8080/svn/jrepo/trunk/Framework</connection>
-    <developerConnection>scm:svn:${username}/${password}@localhost:8080:common_core_api:1101:code</developerConnection>
+    <url>https://github.com/gaurav981/mvn-drools.git</url>
+    <connection>scm:svn:https://github.com/gaurav981/mvn-drools.git</connection>
+    <developerConnection>scm:svn:https://github.com/gaurav981/mvn-drools.git</developerConnection>
   </scm>
   <repositories>
     <repository>
@@ -18,4 +18,16 @@
       <url>http://localhost/maven2/</url>
     </repository>
   </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+        <version>1.9.4</version>
+        <configuration>
+          <connectionType>connection</connectionType>
+        </configuration>
+      </plugin>
+    </plugins
+  </build>
 </project>
