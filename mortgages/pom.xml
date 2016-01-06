@@ -18,7 +18,7 @@
       <url>http://localhost/maven2/</url>
     </repository>
   </repositories>
-  <build>
+<!--  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -29,5 +29,38 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>
+  </build> -->
+  <profiles>
+        <!-- run this profile when releasing the library -->
+        <profile>
+            <id>release</id>
+            <properties>
+                <message>Add version files to git</message>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>1.9.4</version>
+                        <executions>
+                            <execution>
+                                <id>add-version-to-git</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>add</goal>
+                                    <goal>checkin</goal>
+                                </goals>
+                                <configuration>
+                                    <basedir>./</basedir>
+                                    <includes>versions/*</includes>
+                                    <message>[Add Version to git]</message>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
