@@ -25,9 +25,9 @@
         <artifactId>maven-scm-plugin</artifactId>
         <version>1.9.4</version>
         <configuration>
-          <connectionType>connection</connectionType>
+          <connectionType>developerConnection</connectionType>
         </configuration>
       </plugin>
-    </plugins
+    </plugins>
   </build>
 </project>
