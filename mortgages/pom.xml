@@ -5,6 +5,12 @@
   <groupId>mortgages</groupId>
   <artifactId>mortgages</artifactId>
   <version>0.0.1</version>
+  <packaging>jar</packaging> 
+  <scm>
+    <url>http://www.svn.com</url>
+    <connection>scm:svn:http://localhost:8080/svn/jrepo/trunk/Framework</connection>
+    <developerConnection>scm:svn:${username}/${password}@localhost:8080:common_core_api:1101:code</developerConnection>
+  </scm>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
