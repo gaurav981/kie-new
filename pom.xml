@@ -8,8 +8,8 @@
   <packaging>jar</packaging> 
   <scm>
     <url>ssh://git@github.com/gaurav981/mvn-drools.git</url>
-    <connection>scm:git:ssh://git@github.com:gaurav981/mvn-drools.git</connection>
-    <developerConnection>scm:git:ssh:/git@github.com:gaurav981/mvn-drools.git</developerConnection>
+    <connection>scm:git:git@github.com:gaurav981/mvn-drools.git</connection>
+    <developerConnection>scm:git:git@github.com:gaurav981/mvn-drools.git</developerConnection>
   </scm>
   <repositories>
     <repository>
