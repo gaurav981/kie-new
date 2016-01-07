@@ -7,7 +7,7 @@
   <version>0.0.1</version>
   <packaging>jar</packaging> 
   <scm>
-    <url>https://github.com/gaurav981/mvn-drools.git</url>
+    <url>ssh://git@github.com/gaurav981/mvn-drools.git</url>
     <connection>scm:git:git@github.com:gaurav981/mvn-drools.git</connection>
     <developerConnection>scm:git:git@github.com:gaurav981/mvn-drools.git</developerConnection>
   </scm>
