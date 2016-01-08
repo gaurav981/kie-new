@@ -7,29 +7,10 @@
   <version>0.0.1</version>
   <packaging>jar</packaging> 
   <scm>
-    <url>ssh://git@github.com/gaurav981/mvn-drools.git</url>
-    <connection>scm:git:git@github.com:gaurav981/mvn-drools.git</connection>
-    <developerConnection>scm:git:git@github.com:gaurav981/mvn-drools.git</developerConnection>
+    <url>https://github.com/gaurav981/test-drools</url>
+    <connection>scm:git:https://github.com/gaurav981/test-drools</connection>
+    <developerConnection>scm:git:https://github.com/gaurav981/test-drools</developerConnection>
   </scm>
-  <repositories>
-    <repository>
-      <id>guvnor-m2-repo</id>
-      <name>Guvnor M2 Repo</name>
-      <url>http://localhost/maven2/</url>
-    </repository>
-  </repositories>
-<!--  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-plugin</artifactId>
-        <version>1.9.4</version>
-        <configuration>
-          <connectionType>developerConnection</connectionType>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build> -->
   <build>
     <plugins>
       <plugin>
@@ -39,18 +20,8 @@
         <configuration>
           <username>gaurav981</username>
           <password>Gaur9811</password>
-	  <providerImplementations>
-              <git>jgit</git>
-          </providerImplementations>
-          <basedir>../</basedir>
+          <basedir>./</basedir>
         </configuration>
-	<dependencies>
-          <dependency>
-              <groupId>org.apache.maven.scm</groupId>
-              <artifactId>maven-scm-provider-jgit</artifactId>
-                    <version>1.9.4</version>
-          </dependency>
-        </dependencies>
         <executions>
           <execution>
             <id>perform-checkin</id>
@@ -61,7 +32,7 @@
             <configuration>
                 <basedir>./</basedir>
                 <includes>*</includes>
-                <message>test</message>
+                <message>testing</message>
             </configuration>
          </execution>
         </executions>
