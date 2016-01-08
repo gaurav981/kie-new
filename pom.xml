@@ -8,8 +8,8 @@
   <packaging>jar</packaging> 
   <scm>
     <url>https://github.com/gaurav981/mvn-drools</url>
-    <connection>scm:git:ssh://github.com/gaurav981/test-drools.git</connection>
-    <developerConnection>scm:git:ssh://github.com/gaurav981/test-drools.git</developerConnection>
+    <connection>scm:git:https://github.com/gaurav981/test-drools.git</connection>
+    <developerConnection>scm:git:https://github.com/gaurav981/test-drools.git</developerConnection>
   </scm>
   <repositories>
     <repository>
