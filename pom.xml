@@ -7,9 +7,9 @@
   <version>0.0.1</version>
   <packaging>jar</packaging> 
   <scm>
-    <url>https://github.com/gaurav981/mvn-drools</url>
-    <connection>scm:git:https://github.com/gaurav981/mvn-drools</connection>
-    <developerConnection>scm:git:https://github.com/gaurav981/mvn-drools</developerConnection>
+    <url>https://github.com/gaurav981/test-drools</url>
+    <connection>scm:git:https://github.com/gaurav981/test-drools</connection>
+    <developerConnection>scm:git:https://github.com/gaurav981/test-drools</developerConnection>
   </scm>
   <build>
     <plugins>
