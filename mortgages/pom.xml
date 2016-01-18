@@ -23,15 +23,38 @@
           <basedir>./</basedir>
         </configuration>
         <executions>
-          <execution>
-            <id>perform-checkin</id>
-                <phase>generate-sources</phase>
+	 <execution>
+            <id>perform-checkout</id>
+                <phase>initialize</phase>
             <goals>
-                <goal>checkin</goal>
+		<goal>checkout</goal>
             </goals>
             <configuration>
                 <basedir>./</basedir>
                 <includes>*</includes>
+            </configuration>
+         </execution>
+	    <execution>
+            <id>perform-add</id>
+                <phase>initialize</phase>
+            <configuration>
+                <basedir>./</basedir>
+		        <includes>*,src/main/java/org/mortgages/*</includes>
+		        <workingDirectory>./</workingDirectory>
+            </configuration>
+            <goals>
+		        <goal>add</goal>
+            </goals>
+         </execution>
+         <execution>
+            <id>perform-checkin</id>
+                <phase>generate-sources</phase>
+            <goals>
+	        	<goal>checkin</goal>
+            </goals>
+            <configuration>
+                <basedir>./</basedir>
+                <includes>*,src/main/java/org/mortgages/*</includes>
                 <message>testing</message>
             </configuration>
          </execution>
