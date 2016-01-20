@@ -7,9 +7,9 @@
   <version>0.0.1</version>
   <packaging>jar</packaging> 
   <scm>
-    <url>https://github.com/gaurav981/test-drools</url>
-    <connection>scm:git:https://github.com/gaurav981/test-drools</connection>
-    <developerConnection>scm:git:https://github.com/gaurav981/test-drools</developerConnection>
+    <url>https://github.com/gaurav981/kie-new</url>
+    <connection>scm:git:https://github.com/gaurav981/kie-new</connection>
+    <developerConnection>scm:git:https://github.com/gaurav981/kie-new</developerConnection>
   </scm>
   <build>
     <plugins>
@@ -63,3 +63,4 @@
     </plugins>
   </build>
 </project>
+
